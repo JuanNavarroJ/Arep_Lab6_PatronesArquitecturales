@@ -1,64 +1,37 @@
-# Taller de Arquitecturas de Servidores de Aplicaciones, Meta protocolos de objetos, Patrón IoC, Reflexión
+# Patrones Arquitecturales
 
-## Link aplicación web
+## Problema:
 
-[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://arep-lab4-ioc.herokuapp.com/WebService/BM4.jpg)
+Una empresa lo ha contratado para capacitar a sus ingenieros en la construcción de sitios web dinámicos sobre Amazon Web Services. Para esto usted decidió construir un tutorial y un video que permita a los ingenieros hacer lo siguiente:
 
-**Enlace:** [`https://arep-lab4-ioc.herokuapp.com/WebService/`](https://arep-lab4-ioc.herokuapp.com/WebService/P911.jpg)
+### 1. Desplegar un sitio estático usando S3
 
-Para verificar el funcionamiento tenemos diferentes recursos cargados en el servidor los cuales son:
 
-- [`Web.html`](https://arep-lab4-ioc.herokuapp.com/WebService/Web.html)
-- [`MG63.jpg`](https://arep-lab4-ioc.herokuapp.com/WebService/MG63.jpg)
-- [`BM4.jpg`](https://arep-lab4-ioc.herokuapp.com/WebService/BM4.jpg)
-- [`P911.jpg`](https://arep-lab4-ioc.herokuapp.com/WebService/P911.jpg)
-- [`Js.js`](https://arep-lab4-ioc.herokuapp.com/WebService/js.js)
+![1](https://user-images.githubusercontent.com/44879884/76563044-a37bb980-6474-11ea-9f43-6e62784a7267.PNG)
 
----
+![2](https://user-images.githubusercontent.com/44879884/76563045-a37bb980-6474-11ea-98a7-99314b46fa54.PNG)
+![3](https://user-images.githubusercontent.com/44879884/76563046-a37bb980-6474-11ea-95c9-e8e570e6c179.PNG)
+![4](https://user-images.githubusercontent.com/44879884/76563047-a4145000-6474-11ea-8326-4b70efd8944d.PNG)
+![5](https://user-images.githubusercontent.com/44879884/76563049-a4145000-6474-11ea-84e5-8abc50de62c3.PNG)
+![6](https://user-images.githubusercontent.com/44879884/76563050-a4145000-6474-11ea-8069-8dfb86648fcb.PNG)
+![7](https://user-images.githubusercontent.com/44879884/76563051-a4ace680-6474-11ea-872f-3560cf108c4b.PNG)
+![8](https://user-images.githubusercontent.com/44879884/76563053-a4ace680-6474-11ea-931f-98bfde7563ee.PNG)
+![9](https://user-images.githubusercontent.com/44879884/76563028-a1195f80-6474-11ea-8f16-29e1788eb9fa.PNG)
+![10](https://user-images.githubusercontent.com/44879884/76563030-a1b1f600-6474-11ea-9db2-c1053ce07346.PNG)
+![11](https://user-images.githubusercontent.com/44879884/76563031-a1b1f600-6474-11ea-8a47-13bb43a0623b.PNG)
+![12](https://user-images.githubusercontent.com/44879884/76563033-a24a8c80-6474-11ea-9000-5f56a1abdf4d.PNG)
+![13](https://user-images.githubusercontent.com/44879884/76563037-a24a8c80-6474-11ea-8c5e-92af089fcfc9.PNG)
+![14](https://user-images.githubusercontent.com/44879884/76563038-a24a8c80-6474-11ea-9a88-35668a96535f.PNG)
+![15](https://user-images.githubusercontent.com/44879884/76563039-a2e32300-6474-11ea-9c6f-0685612e3b26.PNG)
+![16](https://user-images.githubusercontent.com/44879884/76563040-a2e32300-6474-11ea-8cad-8d8b0cbd94b6.PNG)
+![17](https://user-images.githubusercontent.com/44879884/76563041-a2e32300-6474-11ea-890c-970af3209118.PNG)
 
-### Introducción
+### 2. Desplegar un formulario dinámico usando EC2
 
-En este laboratorio se busca utilizar ya el conocimiento de crear un servidor web el cual pueda resolver solicitudes html, js y jpg. Pero a diferencia del laboratorio anterior ahora buscamos hacer un servidor con Meta protocolos de objetos, Patrón IoC y Reflexión. Por esta razón vamos a hacer un servidor simulando el funcionamiento de Spring usando etiquetas.
+### 3. Enlazar el formulario a una base de datos relacional o no-relacional, para almacenar y traer los datos almacenados. Use servicios de base de datos de AWS.
 
-Ahora en este laboratorio buscamos mejorar el funcionamiento del servidor usando Meta protocolos de objetos, Patrón IoC y Reflexión. 
+### 4. Configurar un VPC para gestionar la seguridad y los permisos de acceso a sus servidores.
 
-![bm](https://user-images.githubusercontent.com/44879884/75122712-75256e00-566e-11ea-9238-5eea6cf98fb9.PNG)
-
----
-
-### Prerequisites
-
-Debemos tener los siguientes programas instalados:
-```
-- Maven 
-- Git
-- Navegador web
-```
-
-## ¿Como instalar y probar?
-
-Debemos tener un editor java instalado y git, es opcional tener instalado el uso de maven que permitira un mejor control sobre el proyecto.
-
-1. Entramos la terminal del dispositivo y accedemos a la carpeta en la cual queremos guardar el proyecto. 
-
-![1](https://user-images.githubusercontent.com/44879884/75121441-fb878300-5661-11ea-91b5-330ef63613a1.PNG)
-
-2. Usando los comandos de git empezamos con : **$ git clone** https://github.com/JuanNavarroJ/Arep_Lab4_ServerWeb e Ingresamos a la carpeta que descargamos desde Github.
-
-![2](https://user-images.githubusercontent.com/44879884/75121443-fc201980-5661-11ea-8f00-3088434e741c.PNG)
-
-3. Usando maven podemos en la linea de comandos compilar y ejecutar el proyecto con el codigo **$ mvn package**
-
-![3a](https://user-images.githubusercontent.com/44879884/75121444-fcb8b000-5661-11ea-978e-c8be43e677fd.PNG)
-![3b](https://user-images.githubusercontent.com/44879884/75121445-fcb8b000-5661-11ea-8615-1fabfffed750.PNG)
-
-4. Si deseas conocer a profundidad el funcionamiento del codigo, podemos abrir el proyecto en un editor java.
-
-![4](https://user-images.githubusercontent.com/44879884/75121446-fcb8b000-5661-11ea-89a4-0bddf55da9fe.PNG)
-
-5. Para generar el javadoc ejecutamos el comando **$ mvn javadoc:javadoc**
-
-![5a](https://user-images.githubusercontent.com/44879884/75121448-fe827380-5661-11ea-930d-c116ce286949.PNG)
 
 ## Despliegue continuo
 
