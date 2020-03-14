@@ -86,6 +86,28 @@ Finalmente ponemos a correr la instancia.
 
 ### 3. Enlazar el formulario a una base de datos relacional o no-relacional, para almacenar y traer los datos almacenados. Use servicios de base de datos de AWS.
 
+Para crear una base de datos creamos el servicio RDS el cual es el administrador de base de datos relacionales de AWS.
+![1](https://user-images.githubusercontent.com/44879884/76692401-170ff900-6624-11ea-8ee1-df00ec314326.PNG)
+
+Damos en crear database la cual nos abrirá toda la posible configuración que podemos hacer para crearla.
+![2](https://user-images.githubusercontent.com/44879884/76692402-17a88f80-6624-11ea-9e48-2f6ccda0be38.PNG)
+
+Escogemos la opción de crear fácil ya que esta opción nos simplificara cierta configuración que para el desarrollo del laboratorio no generara problemas.
+![3](https://user-images.githubusercontent.com/44879884/76692403-18412600-6624-11ea-8f5e-9e618884c44a.PNG)
+
+Ahora elegimos el motor de base datos el cual queremos crear en nuestro caso elegimos una base de datos Postgres también escogemos la configuración gratis ya que esta es suficiente para el desarrollo del laboratorio y no genera mucho costo.
+![4](https://user-images.githubusercontent.com/44879884/76692404-18412600-6624-11ea-801d-dbc52bdae340.PNG)
+
+También deberemos poner el nombre de la base de datos y una clave para el máster de la base de datos.
+![5](https://user-images.githubusercontent.com/44879884/76692405-18d9bc80-6624-11ea-8af5-9ff2f7c776a2.PNG)
+
+Esperamos unos minutos que la base de datos se monte y se cree y deberíamos ver que su estado es disponible y se creó correctamente.
+![6](https://user-images.githubusercontent.com/44879884/76692399-15decc00-6624-11ea-8e9a-d0317860978e.PNG)
+
+Si ingresamos en ella podemos ver la configuración de la máquina.
+![7](https://user-images.githubusercontent.com/44879884/76692400-170ff900-6624-11ea-8b12-c64f4511b3f2.PNG)
+
+
 ### 4. Configurar un VPC para gestionar la seguridad y los permisos de acceso a sus servidores.
 
 
