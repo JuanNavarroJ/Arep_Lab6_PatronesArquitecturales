@@ -60,6 +60,30 @@ Y vemos el resultado de solicitar el recurso a la página web.
 
 ### 2. Desplegar un formulario dinámico usando EC2
 
+Ahora en el servicio de AWS vamos a crear una instancia EC2 para esto buscamos el servicio EC2 y damos en él.
+![Captura6](https://user-images.githubusercontent.com/44879884/76691889-c1d0e900-661d-11ea-9361-be6bedfd1234.PNG)
+
+Luego damos en el botón de lanzar una instancia.
+![Captura7](https://user-images.githubusercontent.com/44879884/76691890-c3021600-661d-11ea-9c9a-4f2e1f34ec8d.PNG)
+
+Escogemos la imagen de la maquina la cual queremos montar que tenga los programas mínimos para funcionar nuestro laboratorio en este caso necesitamos una máquina que tenga java.
+![Captura8](https://user-images.githubusercontent.com/44879884/76691891-c3021600-661d-11ea-9458-174a81a1da78.PNG)
+
+Dejamos la instancia que nos da por defecto ya que esta es suficiente y damos en “Review and Launch”.
+![Captura9](https://user-images.githubusercontent.com/44879884/76691892-c4cbd980-661d-11ea-8965-3489de3e1387.PNG)
+
+En este paso nos mostrara la información general sobre la instancia que vamos a lanzar, damos en el botón “Launch”.
+![Captura10](https://user-images.githubusercontent.com/44879884/76691894-c5647000-661d-11ea-8485-3c3b392e2e65.PNG)
+
+En este paso como no teníamos ningún par de llaves configurado escogemos la opción de crear un nuevo par de llaves.
+![Captura11](https://user-images.githubusercontent.com/44879884/76691895-c5647000-661d-11ea-9451-451bb1d99548.PNG)
+
+Descargamos el par de llaves y lanzamos la instancia.
+![Captura12](https://user-images.githubusercontent.com/44879884/76691896-c5fd0680-661d-11ea-83ba-d3da29046077.PNG)
+
+Finalmente ponemos a correr la instancia.
+![Captura13](https://user-images.githubusercontent.com/44879884/76691898-c6959d00-661d-11ea-9d9a-a2484bd05770.PNG)
+
 ### 3. Enlazar el formulario a una base de datos relacional o no-relacional, para almacenar y traer los datos almacenados. Use servicios de base de datos de AWS.
 
 ### 4. Configurar un VPC para gestionar la seguridad y los permisos de acceso a sus servidores.
