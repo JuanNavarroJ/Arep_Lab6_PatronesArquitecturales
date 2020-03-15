@@ -130,10 +130,6 @@ Configuramos que la nueva entrada es PostgreSQL y guardamos las reglas.
 Ahora configuramos las reglas de salida y también agregamos el puerto de PostgreSQL.
 ![56](https://user-images.githubusercontent.com/44879884/76692638-33f9fb80-6627-11ea-8150-ef560b854884.PNG)
 
-## Despliegue continuo
-
-[![CircleCI](https://circleci.com/gh/JuanNavarroJ/Arep_Lab4_ServerWeb.svg?style=svg)](https://circleci.com/gh/JuanNavarroJ/Arep_Lab4_ServerWeb)
-
 ## Desarrollo
 
 Construido con:
@@ -142,7 +138,7 @@ Construido con:
 
 -	 [CircleCI](https://circleci.com/)  - Despliegue continuo
 
--	 [Heroku](https://dashboard.heroku.com/apps) - Plataforma Web
+-	 [Amazon Web Services](https://aws.amazon.com/) - Plataforma Web
 
 ## Autor
 
