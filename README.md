@@ -110,6 +110,25 @@ Si ingresamos en ella podemos ver la configuración de la máquina.
 
 ### 4. Configurar un VPC para gestionar la seguridad y los permisos de acceso a sus servidores.
 
+Ahora vamos a configurar la seguridad de la instancia EC2 para que pueda tener abierto el puerto 5432 que es de Postgres para enviar y recibir información por este puerto.
+
+Ingresamos a nuestra instancia EC2 creada en el paso 2 y damos en la configuración de la seguridad.
+![50](https://user-images.githubusercontent.com/44879884/76692639-34929200-6627-11ea-9702-5b210fecefd1.PNG)
+
+Damos en editar las reglas de entrada.
+![52](https://user-images.githubusercontent.com/44879884/76692641-352b2880-6627-11ea-8d17-e1f140eef5d7.PNG)
+
+
+Agregamos una nueva regla.
+![53](https://user-images.githubusercontent.com/44879884/76692643-352b2880-6627-11ea-92f9-5822cad97205.PNG)
+
+
+Configuramos que la nueva entrada es PostgreSQL y guardamos las reglas.
+![54](https://user-images.githubusercontent.com/44879884/76692636-32c8ce80-6627-11ea-9aae-772acaff209d.PNG)
+
+
+Ahora configuramos las reglas de salida y también agregamos el puerto de PostgreSQL.
+![56](https://user-images.githubusercontent.com/44879884/76692638-33f9fb80-6627-11ea-8150-ef560b854884.PNG)
 
 ## Despliegue continuo
 
